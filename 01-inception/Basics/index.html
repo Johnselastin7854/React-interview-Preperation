@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ways to Write Hello World | Namaste React</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- 1. Plain HTML way to write the "Hello World Program" -->
+
+      <h1>Hello World By HTML</h1>
+    </div>
+    <!-- 2. Javascript way to write the "Hello World" -->
+    <script>
+      const heading = document.createElement("h1");
+      heading.innerHTML = "Hello World By Javascript";
+      const root = document.getElementById("root");
+      root.appendChild(heading);
+    </script>
+
+    <!-- 3. React way to write the "Hello World" -->
+
+    <!-- This is the core of React. Those all of code written by facebook developers. this code helps us to write the react code. -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <!-- This is the dom manipulation of react . this is the react-dom. This is useful for DOM Manipulation. this File is connected brodge to the DOM -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!-- <script>
+        const headings = React.createElement("h1", {}, "Hello World By React");
+
+        const roots = ReactDOM.createRoot(document.getElementById("root"));
+
+        roots.render(headings);
+      </script> -->
+
+    <script src="./App.js"></script>
+  </body>
+</html>
+
+<!-- NOTES :  -->
+
+<!-- Why React Doesn't have 1 File (CDN) .. Because React NOT only  work on browsers. React also works on mobile phones example: React Native and React 3D-->
