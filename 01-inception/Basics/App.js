@@ -9,9 +9,9 @@
 // React.createElement function has 3 arguements
 // 1. Which Tag we want (like h1, h2, div , section etc....)
 // 2. Attributes of the functions (like id, class etc...)
-// 2.Which children we want
+// 3.Which children we want
 
-// React.createElement createsReact elements (JS Objects) . NOT h1 tag..
+// React.createElement creates React elements (JS Objects) . NOT h1 tag..
 // In that React elements (JS Objects) attributes are "props" and the inside the text is known as "children".
 
 // const roots = ReactDOM.createRoot(document.getElementById("root"));

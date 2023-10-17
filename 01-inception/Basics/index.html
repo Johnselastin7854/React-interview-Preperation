@@ -27,7 +27,7 @@
       src="https://unpkg.com/react@18/umd/react.development.js"
     ></script>
 
-    <!-- This is the dom manipulation of react . this is the react-dom. This is useful for DOM Manipulation. this File is connected brodge to the DOM -->
+    <!-- This is the dom manipulation of react . this is the react-dom. This is useful for DOM Manipulation. this File is connected bridge to the DOM -->
     <script
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
@@ -48,3 +48,36 @@
 <!-- NOTES :  -->
 
 <!-- Why React Doesn't have 1 File (CDN) .. Because React NOT only  work on browsers. React also works on mobile phones example: React Native and React 3D-->
+
+<!-- React is a Library because if we want small portion of the page only (only nav bar) -->
+
+<!-- React is only work inside the root   -->
+
+<!-- Example -->
+
+<body>
+  <header>
+    <h1>hello above the word</h1>
+  </header>
+  <div id="root">
+    <h1>Hello World</h1>
+  </div>
+
+  <footer>
+    <h1>Hello Below the Wrold</h1>
+  </footer>
+</body>
+
+const parent = React.createElement("div", { id: "parent" }, [
+React.createElement("div", { id: "child" }, [ React.createElement("h1", {}, "Im
+child 1 h1 tag"), React.createElement("h2", {}, "Im child 1 h2 tag"), ]),
+React.createElement( "div", { className: "child2" }, React.createElement("h1",
+{}, "Im child 2 h1 tag") ), ]); const roots =
+ReactDOM.createRoot(document.getElementById("root")); roots.render(parent);
+
+<!-- Answer is 
+hello above the word 
+// React codes (NOTE : Hello world is replace by react code..not vanished only replaced.. Everything is replaced by react code.)
+Hello Below the Wrold
+
+ -->
