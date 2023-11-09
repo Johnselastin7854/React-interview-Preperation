@@ -2,7 +2,7 @@
 
 1. What is Emmet?
 
-- Emmet is a **_Code Editor Plugin_** and **_Code Abbrevation_** that makes copde easier to use.
+- Emmet is a **_Code Editor Plugin_** and **_Code Abbrevation_** that makes code easier to use.
 
 - It allows you to expand HTML, CSS and XML code.
 
@@ -25,7 +25,7 @@
 
 - We want to build complete application then Framework is Good.
 
-- Set of rules and Guidlines that can follow nto build our applications.
+- Set of rules and Guidelines that can follow into build our applications.
 
 **_Library:_**
 
